@@ -1,0 +1,32 @@
+<div class="timer-display" id="timer-display-id" data-dateid="{{ block.settings.date }}">
+    <div class="timer-block">
+      <span class="timer-block__num js-timer-days">00</span>
+      <span class="timer-block__unit">Days</span>
+    </div>
+    <div class="timer-block">
+      <span class="timer-block__num js-timer-hours">00</span>
+      <span class="timer-block__unit">Hours</span>
+    </div>
+    <div class="timer-block">
+      <span class="timer-block__num js-timer-minutes">00</span>
+      <span class="timer-block__unit">Minutes</span>
+    </div>
+    <div class="timer-block">
+      <span class="timer-block__num js-timer-seconds">00</span>
+      <span class="timer-block__unit">Seconds</span>
+    </div>
+</div>
+
+
+<script src="{{ 'scripts.js' | asset_url }}" defer></script>
+<link type="text/css" href="{{ 'style.css' | asset_url }}" rel="stylesheet">
+{% schema %}
+{
+  "name": "Countdown Timer",
+  "target": "section",
+  "settings": [
+    { "type": "text", "id": "date", "label": "Input ISO Date (YYYY-MM-DD)", "default": "2024-03-31" }
+  ]
+}
+{% endschema %}
+
