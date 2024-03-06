@@ -22,6 +22,7 @@ Countdown Timer Theme App Extension
    It will prompt you to choose whether you want to create new app or Not, Commect to an existing app. Please choose n (No)
 
    After that, it will show you a list of your existing apps connected to your shopify account. Choose your preferred app.
+
    After that, it will show the list of types of extensions. Please choose Theme app extension and press enter
 
 6. Give a name of your extension
